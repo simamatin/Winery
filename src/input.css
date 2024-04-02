@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Karla";
+        src: local("Karla"), url("../fonts/Karla-VariableFont_wght.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "MontserratMedium";
+        src: local("Montserrat Medium"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "MontserratThin";
+        src: local("Montserrat Thin"), url("../fonts/Montserrat-Thin.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "PlayfairDisplay";
+        src: local("Playfair Display"), url("../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+        font-display: swap;
+    }
+}
+
+@layer components {
+    .menu {
+        @apply absolute top-[344px] -left-full md:static w-full md:flex md:w-full md:justify-evenly md:items-center child:leading-[64px] font-Karla text-white text-middleBase bg-claret-600 uppercase transition-all child-hover:bg-claret-200 child-hover:border-y md:child-hover:border-none md:child-hover:bg-claret-600 md:child-hover:text-claret-200 child-hover:border-y-claret-800 overflow-hidden z-20;
+    }
+
+    .shop-box {
+        @apply flex justify-center;
+    }
+
+    .shop-box__link {
+        @apply inline-flex items-center justify-center w-56 py-3 bg-claret-400 text-lg hover:duration-500 hover:bg-claret-200;
+    }
+
+    .shop-box__txt {
+        @apply font-Karla text-base/5 text-white tracking-widest uppercase;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        color: #fff;
+    }
+
+    .user-name__link {
+        @apply text-sm
+    }
+
+    .shop-box__link-min,
+    .user-name__link-min {
+        @apply inline-flex items-center justify-center w-48 text-base bg-claret-400 py-4
+    }
+
+    .colored-bottle1,
+    .colored-bottle2,
+    .colored-bottle3 {
+        @apply relative h-[300px] sm:h-80;
+    }
+
+    .colored-bottle1::before {
+        background-image: url("../images/2024/redwine-top-bottle.png");
+    }
+
+    .colored-bottle2::before {
+        background-image: url("../images/2024/whitewine-top-bottle.png");
+    }
+
+    .colored-bottle3::before {
+        background-image: url("../images/2024/rosewine-top-bottle.png");
+    }
+
+    .colored-bottle1::before,
+    .colored-bottle2::before,
+    .colored-bottle3::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -28%);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .colored-wine {
+        @apply min-w-[300px] inline-block absolute top-6 sm:top-10 left-1/2 -translate-x-1/2 font-PlayfairDisplay text-center text-claret-400 text-3xl xs:text-4xl sm:text-3xl lg:text-[35px];
+    }
+
+    .shop-now_link {
+        @apply block absolute bottom-0 mx-auto w-full h-[42px] uppercase bg-claret-400 text-white text-center text-sm/10 font-Karla transition-all;
+    }
+
+    @media screen and (min-width: 640px) {
+        .shop-now_link:hover {
+            @apply bg-claret-200;
+        }
+    }
+
+    .subscribe {
+        background: linear-gradient(180deg, rgba(150, 150, 150, 0) 0%, rgba(255, 255, 255, 0) 43%), url("../images/2024/subscribe-background-scaled.jpg") no-repeat center / cover;
+    }
+
+    .vineyard {
+        background: url("../images/2024/vineyard-tours-background-scaled.jpg") no-repeat center / cover;
+    }
+
+    .the-vineyard {
+        background: url("../images/2024/vineyard-hero-background-scaled.jpg") no-repeat center / cover;
+    }
+
+    .distributors {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/2024/distributors-ptb-background-scaled.jpg") no-repeat center / cover;
+    }
+
+    .blog {
+        background: url("../images/2024/blog-ptb-background-scaled.jpg") no-repeat center / cover;
+        position: relative;
+    }
+
+    .blog::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    .blog .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .contact {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/contact-ptb-background-scaled.jpg") no-repeat center / cover;
+    }
+
+    .christmas {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/christmas-wines-1024x748.jpg") no-repeat center / cover;
+    }
+
+    .history-of-wine {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/wine-history-1024x748.jpg") no-repeat center / cover;
+    }
+
+    .red-wine {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/red-wine-pairings-1024x748.jpg") no-repeat center / cover;
+    }
+
+    .beauty-wine {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/beauty-of-winemaking-1024x748.jpg") no-repeat center / cover;
+    }
+
+    .dessert-wine {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/dessert-wine-101-scaled.jpg") no-repeat center / cover;
+    }
+
+    .grape-contact {
+        background: url("../images/2024/grape-right-background-scaled.jpg") no-repeat right center / cover;
+        padding: 80px 0;
+    }
+
+    .cork {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/2024/why-cork-scaled.jpg") no-repeat right center / cover;
+        padding: 80px 0;
+    }
+
+    .tipples {
+        background: url("../images/2024/single-prod-related-background-scaled.jpg") no-repeat right center / cover;
+        padding: 100px 0;
+    }
+
+    .progress {
+        height: 8px;
+        outline: none;
+        border-radius: 18px;
+        transition: background 450ms ease-in;
+        appearance: none;
+    }
+
+    .progress::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: #7f0f41;
+        cursor: pointer;
+        border-radius: 100%;
+        border: none;
+    }
+
+    .input-contact {
+        @apply w-full max-w-[750px] py-3.5 px-4 mb-8 rounded-lg border border-[#E2E2E2] focus:border-claret-400 outline-none;
+    }
+
+    .label-contact {
+        @apply inline-block mb-3 text-[#4A4E57] text-sm tracking-widest;
+    }
+
+    @media screen and (max-width: 768px) {
+        .cart-account::before {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            background-color: #45152A;
+        }
+    }
+    .history:hover::after {
+        content: 'A History of Wine';
+    }
+
+    .history-wine:hover::after {
+        content: 'Red Wine Paining';
+    }
+
+    .best-christmas:hover::after {
+        content: 'The Best Christmas of Wine';
+    }
+
+    .beautyOfWine:hover::after {
+        content: 'The Beauty of Winemaking';
+    }
+
+    .dessertOfWine:hover::after {
+        content: 'Dessert Wine 101';
+    }
+
+    .whyCork:hover::after {
+        content: 'Why Cork?';
+    }
+
+    .malbec-selectA:hover::after {
+        content: 'Pinot Gorgio Select';
+    }
+
+    .malbec-selectB:hover::before {
+        content: 'Pinot Gorgio Select';
+    }
+
+    .pinot-case:hover::after {
+        content: 'Pinot Gorgio Case';
+    }
+
+    .white-zinfandelA:hover::after {
+        content: 'White Zinfandel Select';
+    }
+
+    .white-zinfandelB:hover::before {
+        content: 'White Zinfandel Select';
+    }
+    .malbec-case:hover::before {
+        content: 'White Zinfandel Select';
+    }
+
+    .social-apps {
+        @apply absolute top-20 sm:top-28 text-3xl xs:text-4xl sm:text-3xl lg:text-[35px] w-10 md:w-14 h-14 text-claret-400
+    }
+
+    .zinfandel-caseA:hover::after {
+        content: 'White Zinfandel Case';
+    }
+
+    .zinfandel-caseB:hover::before {
+        content: 'White Zinfandel Case';
+    }
+
+    .zinfandel-select:hover::before {
+        content: 'White Zinfandel Select';
+    }
+
+    .mixed-case:hover::after {
+        content: 'Mixed Case of Wine';
+    }
+
+    .face:hover::before,
+    .twitter:hover::before,
+    .what:hover::before,
+    .env:hover::before {
+        display: block;
+        position: absolute;
+        top: -200%;
+        right: -150%;
+        width: 78px;
+        height: 25px;
+        background-color: #333;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        line-height: 25px;
+        border-radius: 3px;
+        letter-spacing: 1px;
+    }
+
+    .face:hover::before {
+        content: 'Facebook';
+    }
+
+    .twitter:hover::before {
+        content: 'X';
+        width: 25px;
+        right: 0;
+    }
+
+    .what:hover::before {
+        content: 'WhatsApp';
+    }
+
+    .env:hover::before {
+        content: 'Email';
+    }
+
+
+}
+
+
+@layer utilities {
+
+}
