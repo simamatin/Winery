@@ -247,9 +247,15 @@
     .malbec-selectB:hover::before {
         content: 'Pinot Gorgio Select';
     }
-
-    .pinot-case:hover::after {
+    .malbec-caseA:hover::after {
         content: 'Pinot Gorgio Case';
+    }
+    .pinot-caseA:hover::after {
+        content: 'Pinot Gorgio Case';
+    }
+
+    .pinot-selectB:hover::before {
+        content: 'Pinot Gorgio Select';
     }
 
     .white-zinfandelA:hover::after {
@@ -258,13 +264,6 @@
 
     .white-zinfandelB:hover::before {
         content: 'White Zinfandel Select';
-    }
-    .malbec-case:hover::before {
-        content: 'White Zinfandel Select';
-    }
-
-    .social-apps {
-        @apply absolute top-20 sm:top-28 text-3xl xs:text-4xl sm:text-3xl lg:text-[35px] w-10 md:w-14 h-14 text-claret-400
     }
 
     .zinfandel-caseA:hover::after {
@@ -281,6 +280,19 @@
 
     .mixed-case:hover::after {
         content: 'Mixed Case of Wine';
+    }
+
+    .red-boxesA:hover::after {
+        content: 'Malbec Select Case';
+    }
+
+    .red-boxesB:hover::before {
+        content: 'Malbec Select Case';
+    }
+
+
+    .social-apps {
+        @apply absolute top-20 sm:top-28 text-3xl xs:text-4xl sm:text-3xl lg:text-[35px] w-10 md:w-14 h-14 text-claret-400
     }
 
     .face:hover::before,
