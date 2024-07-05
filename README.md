@@ -33,3 +33,8 @@ Avada Winery is a fictitious winery specializing in the finest wines. The websit
   - Recent News: Featuring recent articles related to wine.
 
 - Footer: Including navigation links, subscription form, and copyright information.
+
+
+## Deployment
+
+Only the home page of the website is deployed in this repository. However, the entire project encompasses multiple pages.
