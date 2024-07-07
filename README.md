@@ -50,7 +50,9 @@ Only the home page of the website is deployed in this repository. However, the e
 
 - Form Validation: Validates email addresses on login and contact forms
 
+- Password Visibility Toggle: Allows users to show/hide passwords on login form.
 
+  - Submenu Toggle: Provides a dropdown submenu for navigation items.
 copyright
 
 © The Winer website is designed by the [Avada](https://avada.website/winery/).
