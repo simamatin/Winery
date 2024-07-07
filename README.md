@@ -52,7 +52,12 @@ Only the home page of the website is deployed in this repository. However, the e
 
 - Password Visibility Toggle: Allows users to show/hide passwords on login form.
 
-  - Submenu Toggle: Provides a dropdown submenu for navigation items.
+- Submenu Toggle: Provides a dropdown submenu for navigation items.
+ 
+- Eye Icon Toggle: Allows users to toggle password visibility.
+
+
+    
 copyright
 
 © The Winer website is designed by the [Avada](https://avada.website/winery/).
