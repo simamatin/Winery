@@ -44,7 +44,9 @@ Only the home page of the website is deployed in this repository. However, the e
 
 - Responsive Design: Ensures optimal viewing experience across various devices.
 
+- Hamburger Menu: Allows easy navigation on mobile devices.
 
+- Scroll-to-Top Button: Enables users to quickly scroll to the top of the page.
 
 
 
