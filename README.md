@@ -48,6 +48,7 @@ Only the home page of the website is deployed in this repository. However, the e
 
 - Scroll-to-Top Button: Enables users to quickly scroll to the top of the page.
 
+- Form Validation: Validates email addresses on login and contact forms
 
 
 copyright
