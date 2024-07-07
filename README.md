@@ -56,7 +56,7 @@ Only the home page of the website is deployed in this repository. However, the e
  
 - Eye Icon Toggle: Allows users to toggle password visibility.
 
-
+- This website is not currently accessible locally and requires execution in a web environment.
     
 copyright
 
